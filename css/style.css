@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+ --font: "Open Sans", sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(147deg, #3739c0ec 40%,#f5f1f1ee 40%);
+}
+
+/*Eslização do meu Header, com a logo e links*/
+
+.meucabecalho{
+    padding: 4%;
+    font-family: "Open Sans", sans-serif;
+}
+.meuheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meuslinks{
+    display: flex;
+    gap: 70px;
+}
+
+.meuslinks li{
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes linkhover {
+    0%{
+        width: 0%;
+    }
+    100%{
+
+    }
+}
+.hoverhelp1:hover{
+    color: #fff;
+}
+.hoverhelp1:hover::before{
+    content: "";
+    top: 100%;
+    position:absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #fff;
+    animation: linkhover 1s infinite ease-in-out;
+}
+
+.hoverhelp2:hover{
+    color: #fff;
+}
+
+.hoverhelp2:hover::before{
+    content: "";
+    top: 100%;
+    position:absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #fff;
+    animation: linkhover 1s infinite ease-in-out;
+}
+.hoverhelp3:hover{
+    color: #fff;
+}
+.hoverhelp3:hover::before{
+    content: "";
+    top: 100%;
+    position:absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #fff;
+    animation: linkhover 1s infinite ease-in-out;
+}
+.hoverhelp:hover{
+    color: #3739c0ec;
+}
+.hoverhelp:hover::before{
+    content: "";
+    top: 100%;
+    position:absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #3739c0ec;
+    animation: linkhover 1s infinite ease-in-out;
+}
+
+.btnsing{
+    position: relative;
+}
+.btnsing button{
+    background-color: #3739c0ec;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btnsing button:hover{ 
+    background-color: #fff;
+    color: #3739c0ec;
+    border: 1px solid #3739c0ec ;
+   
+}
+
+.corpocontudos{
+    display: flex;
+    width: 90%;
+    min-height: 68vh;
+    background-color: #3739c0ec;
+}
+
+.logosredes{
+    background-color: red;
+    width: 20px;
+    height: 220px;
+    display: flex;
+}
