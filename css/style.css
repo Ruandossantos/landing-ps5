@@ -10,6 +10,7 @@
 }
 /*ESLIZAÇÃO DO MEU BODY, VALO PARA TODOS CONTEUDOS*/
 body{
+    overflow: hidden;
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(145deg, var(--color-principal) 57%, #e9e9e9 30%);
@@ -77,18 +78,6 @@ body .tri1{
     }
 }
 
-.backimgjogos{
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    position: absolute;
-    top: 0;
-    left: 31%;
-    transform: (45deg);
-}
-imgfifa{
-
-}
 
 body .tri2{
     position: absolute;
@@ -115,6 +104,124 @@ body .tri2{
     100%{
         opacity: 0;
     }
+}
+
+
+
+.backimgjogos{
+    width: 150%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left:26%;
+    z-index: -1;
+    transform: rotate(-35deg);
+}
+.minhafotos{
+width: 100%;
+height: 100%;
+background-color: black;
+position: relative;
+}
+.minhafotos .fifa{
+    position:absolute;
+    content: "";
+    top: 23px;
+    left: 410px;
+    background-color: forestgreen;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 2cap;
+}
+.minhafotos .fifa img{
+    width: 100%;
+}
+
+.minhafotos .fifa1{
+    position:absolute;
+    content: "";
+    top: 23px;
+    left: 710px;
+    background-color: forestgreen;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 2cap;
+}
+.minhafotos .fifa1 img{
+    width: 100%;
+}
+
+
+.minhafotos .f1{
+    position:absolute;
+    content: "";
+    top: 23px;
+    left: 75px;
+    background-color: forestgreen;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 2cap;
+}
+.minhafotos .f1 img{
+    width: 100%;
+}
+
+.minhafotos .god-of-war{
+    position:absolute;
+    content: "";
+    top:200px;
+    left: 666px;
+    background-color: forestgreen;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 0px;
+}
+.minhafotos .god-of-war img{
+    width: 100%;
+    height: 188px;
+}
+
+.minhafotos .home-haranha{
+    position:absolute;
+    content: "";
+    top: -61px;
+    left: 870px;
+    background-color: forestgreen;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 150px;
+}
+.minhafotos .home-haranha img{
+    width: 100%;
+}
+
+.minhafotos .codwarzone{
+    position:absolute;
+    content: "";
+    top: 190px;
+    left: 294px;
+    background-color: forestgreen;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 150px;
+}
+.minhafotos .codwarzone img{
+    width: 100%;
+}
+
+.minhafotos .stree{
+    position:absolute;
+    content: "";
+    top: 368px;
+    left: 547px;
+    background-color: forestgreen;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 150px;
+}
+.minhafotos .stree img{
+    width: 100%;
 }
 
 
