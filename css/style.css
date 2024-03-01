@@ -48,11 +48,23 @@ body .x1::before{
 body .tri{
     position: absolute;
     content: "";
-    top: 40px;
+    top: 12%;
     width: 15px;
     height: 1px;
     background-color: #fff;
     transform: rotate(-60deg);
+    animation: trianguloright 4s infinite ease-in-out;
+}
+@keyframes trianguloright {
+    0%{
+        transform:translateX(50px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+    }
 }
 body .tri1{
     position: absolute;
@@ -72,10 +84,9 @@ body .tri1{
         opacity: 0;
     }
     50%{
-        opacity: 1;
+        opacity: 0;
     }
     100%{
-        opacity: 0;
     }
 }
 
@@ -95,15 +106,13 @@ body .tri2{
 
 @keyframes triangulobaixo {
     0%{
-        transform:translateY(-40px);
+        transform:translateY(13px);
         opacity: 0;
     }
     50%{
-        transform:translateY(3px);
-        opacity: 1;
+        opacity: 0;
     }
     100%{
-        opacity: 0;
     }
 }
 
