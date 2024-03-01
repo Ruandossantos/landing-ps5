@@ -2,130 +2,211 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
+
 :root{
- --font: "Open Sans", sans-serif;
+    --color-principal: #1b318f;
 }
+/*ESLIZAÇÃO DO MEU BODY, VALO PARA TODOS CONTEUDOS*/
 body{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(147deg, #3739c0ec 40%,#f5f1f1ee 40%);
+    background-image: linear-gradient(145deg, var(--color-principal) 57%, #d4d4d4 30%);
+    padding: 2%;
 }
-
-/*Eslização do meu Header, com a logo e links*/
-
-.meucabecalho{
-    padding: 4%;
-    font-family: "Open Sans", sans-serif;
-}
-.meuheader{
+/*ESTILIZAÇÃO DO CONTEINER (Contem o logo ps, os link, e o botão sign in)*/
+.conteinerheader{
+    width: 100%;
+    min-height: 4vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    animation: animation-listas 2s infinite ease-in-out;
 }
 
-.meuslinks{
+
+/*Estilização dos links*/
+.links{
+
+}
+.links ul{
     display: flex;
     gap: 70px;
-}
-
-.meuslinks li{
-    font-size: .9rem;
-    font-weight: 600;
-    cursor: pointer;
+    list-style: none;
     position: relative;
 }
 
-@keyframes linkhover {
+@keyframes animation-listas {
+    0%{
+        opacity: 0;
+    }
+}
+.links ul li{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.links ul li:hover{
+    color: #d4d4d4;
+}
+.links ul li:hover::before{
+    position:absolute;
+    content: "";
+    top: 100%;
+    width: 40px;
+    cursor: pointer;
+    border: 1px solid #d4d4d4;
+    animation: animation-hover-before .6s 1 ease-in-out;
+}
+
+@keyframes animation-hover-before {
     0%{
         width: 0%;
     }
-    100%{
-
-    }
-}
-.hoverhelp1:hover{
-    color: #fff;
-}
-.hoverhelp1:hover::before{
-    content: "";
-    top: 100%;
-    position:absolute;
-    width: 110%;
-    height: 1px;
-    background-color: #fff;
-    animation: linkhover 1s infinite ease-in-out;
 }
 
-.hoverhelp2:hover{
-    color: #fff;
-}
 
-.hoverhelp2:hover::before{
-    content: "";
-    top: 100%;
-    position:absolute;
-    width: 110%;
-    height: 1px;
-    background-color: #fff;
-    animation: linkhover 1s infinite ease-in-out;
-}
-.hoverhelp3:hover{
-    color: #fff;
-}
-.hoverhelp3:hover::before{
-    content: "";
-    top: 100%;
-    position:absolute;
-    width: 110%;
-    height: 1px;
-    background-color: #fff;
-    animation: linkhover 1s infinite ease-in-out;
-}
-.hoverhelp:hover{
-    color: #3739c0ec;
-}
-.hoverhelp:hover::before{
-    content: "";
-    top: 100%;
-    position:absolute;
-    width: 110%;
-    height: 1px;
-    background-color: #3739c0ec;
-    animation: linkhover 1s infinite ease-in-out;
-}
-
-.btnsing{
-    position: relative;
-}
-.btnsing button{
-    background-color: #3739c0ec;
-    color: #fff;
+/*Estilização do botão (Sign in)*/
+.btnsin button{
+    background-color: var(--color-principal);
+    width: 130px;
+    height: 35px;
     border: none;
     border-radius: 20px;
-    width: 80px;
-    height: 30px;
+    color: #fff;
+    transition: .5s;
+    border:  1px solid #d4d4d4;
+}
+.btnsin button span{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.btnsin button:hover{
+    background-color: #d4d4d4;
+    color: var(--color-principal);
     cursor: pointer;
-    transition: 1s;
+    border: 1px solid var(--color-principal);
 }
 
-.btnsing button:hover{ 
-    background-color: #fff;
-    color: #3739c0ec;
-    border: 1px solid #3739c0ec ;
-   
-}
+/*Estilização do meu conteudo interno, logos, informações e imagem demostrativa*/
 
-.corpocontudos{
+.containermain{
     display: flex;
-    width: 90%;
-    min-height: 68vh;
-    background-color: #3739c0ec;
+    min-height: 80vh;
+    width: 100%;
+}
+/*ESTLIZAÇÃO DAS LOGOS*/
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    min-height: 100%;
+    width: 6%;
+}
+.logos a{
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+    animation: animation-logos 1s 1 ease-in-out;
+}
+@keyframes animation-logos {
+    0%{
+        transform: translateX(-50px)
+    }
+
+}
+.logos a:hover{
+    color: #d4d4d4;
+    transform: scale(1.1);
+}
+.logos a i{
+    font-size: 1rem;
 }
 
-.logosredes{
-    background-color: red;
-    width: 20px;
-    height: 220px;
+/*Estlização dos h1 span e btns*/
+
+.contuido-btns{
+    width: 40%;
+    min-height: 20%;
+    color: #fff;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.contuido-btns h1{
+    font-size: 2.1rem;
+    padding-bottom: 20px;
+    animation: animation-informacoe 1s infinite ease-in-out;
+}
+@keyframes animation-informacoes {
+    0%{
+        transform: translateX(-50px)
+    }
+
+}
+.contuido-btns span{
+   font-size: 1rem;
+}
+
+.meusbtn{
     display: flex;
+    margin-top: 15%;
+    gap: 30px;
+    
+}
+
+.btnmaissobre{
+    border: 1px solid #d4d4d4;
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #1b318f;
+    color: #d4d4d4;
+    font-weight: 600;
+    transition: .5s;
+}
+.btnmaissobre:hover{
+    background-color:#d4d4d4;
+    color:#1b318f;
+    cursor: pointer;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 14px #ffffff21;
+}
+
+.btncompra{
+    border: 1px solid #1b318f;
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #d4d4d4;
+    color: #1b318f;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btncompra:hover{
+    background-color: #1b318f;
+    color: #d4d4d4;
+    cursor: pointer;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 14px #ffffff21;
+}
+
+/*Estilização do img ps5 em destaque lado esquerdo*/
+
+.fotoimgps{
+    min-height: 75%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoimgps img{
+    width: 60%;
 }
