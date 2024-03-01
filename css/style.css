@@ -65,6 +65,7 @@ body .tri1{
     margin-left: 7px;
     animation: trianguloleft 4s infinite ease-in-out;
 }
+
 @keyframes trianguloleft {
     0%{
         transform:translateX(-40px);
@@ -107,35 +108,48 @@ body .tri2{
 }
 
 
-
 .backimgjogos{
     width: 150%;
     height: 100%;
-    background-color: red;
     position: absolute;
     top: 0px;
-    left:26%;
-    z-index: -1;
+    left:24%;
     transform: rotate(-35deg);
+    background-color: #000000;
+    z-index: -2;
 }
+
+.backg{
+    position: absolute;
+    width: 200%;
+    height: 130%;
+    right: 5px;
+    transform: rotate(145deg);
+    background-color: #13236b;
+    z-index: -1;
+}
+
 .minhafotos{
-width: 100%;
-height: 100%;
-background-color: black;
-position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #000000;
 }
+
 .minhafotos .fifa{
     position:absolute;
     content: "";
-    top: 23px;
-    left: 410px;
-    background-color: forestgreen;
+    top: 73px;
+    left: 478px;
     transform: rotate(35deg);
     width: 300px;
     height: 2cap;
 }
 .minhafotos .fifa img{
     width: 100%;
+    height: 178px;
+    filter: blur(1.7px);
+    opacity: 0.2;
 }
 
 .minhafotos .fifa1{
@@ -143,86 +157,126 @@ position: relative;
     content: "";
     top: 23px;
     left: 710px;
-    background-color: forestgreen;
     transform: rotate(35deg);
     width: 300px;
     height: 2cap;
 }
 .minhafotos .fifa1 img{
     width: 100%;
+    filter: blur(1.7px);
+    opacity: 0.2;
 }
 
 
 .minhafotos .f1{
     position:absolute;
     content: "";
-    top: 23px;
-    left: 75px;
-    background-color: forestgreen;
+    top: -73px;
+    left: 250px;
     transform: rotate(35deg);
     width: 300px;
     height: 2cap;
 }
 .minhafotos .f1 img{
     width: 100%;
+    filter: blur(1.7px);
+    opacity: 0.2;
 }
 
 .minhafotos .god-of-war{
     position:absolute;
     content: "";
-    top:200px;
-    left: 666px;
-    background-color: forestgreen;
+    top:250px;
+    left: 735px;
     transform: rotate(35deg);
     width: 300px;
     height: 0px;
 }
 .minhafotos .god-of-war img{
-    width: 100%;
-    height: 188px;
+    width: 101%;
+    height: 178px;
+    filter: blur(1.7px);
+    opacity: 0.2;
 }
 
 .minhafotos .home-haranha{
     position:absolute;
     content: "";
-    top: -61px;
-    left: 870px;
-    background-color: forestgreen;
+    top: -41px;
+    left: 900px;
     transform: rotate(35deg);
     width: 300px;
     height: 150px;
 }
 .minhafotos .home-haranha img{
     width: 100%;
+    filter: blur(1.7px);
+    opacity: 0.3;
 }
 
 .minhafotos .codwarzone{
     position:absolute;
     content: "";
-    top: 190px;
-    left: 294px;
-    background-color: forestgreen;
+    top: 210px;
+    left: 335px;
     transform: rotate(35deg);
     width: 300px;
     height: 150px;
 }
 .minhafotos .codwarzone img{
-    width: 100%;
+    width: 101%;
+    height: 152px;
+    filter: blur(1.7px);
+    opacity: 0.1;
 }
 
 .minhafotos .stree{
     position:absolute;
     content: "";
-    top: 368px;
-    left: 547px;
-    background-color: forestgreen;
+    top: 388px;
+    left: 588px;
     transform: rotate(35deg);
     width: 300px;
     height: 150px;
 }
+
 .minhafotos .stree img{
     width: 100%;
+    filter: blur(1.7px);
+    opacity: 0.1;
 }
+
+.minhafotos .diablo{
+    position:absolute;
+    content: "";
+    top: 193px;
+    left: 923px;
+    transform: rotate(35deg);
+    width: 320px;
+    height: 150px;
+}
+
+.minhafotos .diablo img{
+    width: 100%;
+    filter: blur(1.7px);
+    opacity: 0.5;
+}
+
+.minhafotos .read{
+    position:absolute;
+    content: "";
+    top: 36px;
+    left: 85px;
+    transform: rotate(35deg);
+    width: 300px;
+    height: 150px;
+}
+.minhafotos .read img{
+    width: 100%;
+    filter: blur(1.7px);
+    opacity: 0.1;
+}
+
 
 
 
@@ -237,9 +291,7 @@ position: relative;
     animation: animation-listas .8s 1 ease-in-out;
 }
 /*Estilização dos links*/
-.links{
 
-}
 .links ul{
     display: flex;
     gap: 70px;
@@ -429,6 +481,8 @@ position: relative;
     width: 60%;
     animation: animation-imagens 4s 1 ease-in-out;
     animation:aniro 5s 10000 ease-out ;
+    opacity: 0.9;
+    filter: drop-shadow(1px 1px blue);
 }
 @keyframes animation-imagens{
     0%{
