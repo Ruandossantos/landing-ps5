@@ -559,8 +559,7 @@ body .tri2{
     width: 60%;
     animation: animation-imagens 4s 1 ease-in-out;
     animation:aniro 5s 10000 ease-out ;
-    opacity: 0.9;
-    filter: drop-shadow(1px 1px blue);
+    filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.137));
 }
 @keyframes animation-imagens{
     0%{
