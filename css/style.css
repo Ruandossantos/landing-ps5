@@ -188,7 +188,7 @@ body .tri2{
     top: 0px;
     left:24%;
     transform: rotate(-35deg);
-    background-color: #000000;
+    background-color: #bdb8b8;
     z-index: -2;
 }
 
@@ -207,7 +207,7 @@ body .tri2{
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #000000;
+    background-color: #ffffff;
     animation: animationcardjogos 1.5s 1 ease-in-out;
 }
 @keyframes animationcardjogos {
@@ -559,7 +559,7 @@ body .tri2{
     width: 60%;
     animation: animation-imagens 4s 1 ease-in-out;
     animation:aniro 5s 10000 ease-out ;
-    filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.137));
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.719));
 }
 @keyframes animation-imagens{
     0%{
